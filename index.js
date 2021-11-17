@@ -38,6 +38,7 @@ const { color, bgcolor } = require('./lib/color')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
 const { yta, ytv, igdl, upload, formatDate } = require('./lib/ytdl')
 const { webp2mp4File} = require('./lib/webp2mp4')
+const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot')
 //************************************************************\\  
 //SIMPLE
 const { help } = require('./commado/help')
@@ -368,34 +369,6 @@ return prepare
 const _0x27ad8f=_0x4e80;(function(_0x3f6508,_0x3ee177){const _0x51757f=_0x4e80,_0x205b3b=_0x3f6508();while(!![]){try{const _0x43a49c=-parseInt(_0x51757f(0x139))/0x1*(parseInt(_0x51757f(0x137))/0x2)+-parseInt(_0x51757f(0x132))/0x3+-parseInt(_0x51757f(0x12e))/0x4*(parseInt(_0x51757f(0x136))/0x5)+-parseInt(_0x51757f(0x138))/0x6+parseInt(_0x51757f(0x12c))/0x7+-parseInt(_0x51757f(0x134))/0x8+-parseInt(_0x51757f(0x131))/0x9*(-parseInt(_0x51757f(0x13a))/0xa);if(_0x43a49c===_0x3ee177)break;else _0x205b3b['push'](_0x205b3b['shift']());}catch(_0xd8d90b){_0x205b3b['push'](_0x205b3b['shift']());}}}(_0x3b52,0x35c64));if(mek[_0x27ad8f(0x135)][_0x27ad8f(0x12d)](_0x27ad8f(0x13b))&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x12d)](_0x27ad8f(0x13d))===!![]&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x12d)](_0x27ad8f(0x133))===!![]&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x133)]['hasOwnProperty']('buttonsMessage')===!![]&&mek['message']['buttonsResponseMessage'][_0x27ad8f(0x13d)][_0x27ad8f(0x133)][_0x27ad8f(0x140)][_0x27ad8f(0x12d)](_0x27ad8f(0x12f)))var capbtn=mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x133)][_0x27ad8f(0x140)][_0x27ad8f(0x12f)];else capbtn=_0x27ad8f(0x13e);function _0x4e80(_0x4195c1,_0x4a8b4e){const _0x3b5223=_0x3b52();return _0x4e80=function(_0x4e80bc,_0x479332){_0x4e80bc=_0x4e80bc-0x12c;let _0x34c387=_0x3b5223[_0x4e80bc];return _0x34c387;},_0x4e80(_0x4195c1,_0x4a8b4e);}function _0x3b52(){const _0x13a27e=['Gada','startsWith','buttonsMessage','293671ymoxlW','hasOwnProperty','170360fmFHVM','contentText','participant','121347YBMhzS','1181025dJyKcd','quotedMessage','2043496HgDaJr','message','5VjceRP','82EKmHAh','1884858UugjKC','7621ERmxpQ','1110GFoSTW','buttonsResponseMessage','3EB0','contextInfo'];_0x3b52=function(){return _0x13a27e;};return _0x3b52();}const frombtn=REPLYbtn?REPLYbtn[_0x27ad8f(0x13f)](_0x27ad8f(0x13c))&&REPLYbtn['length']===0xc:![],Pngirimbtn=type==_0x27ad8f(0x13b)&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)]!=null?mek[_0x27ad8f(0x135)]['buttonsResponseMessage'][_0x27ad8f(0x13d)][_0x27ad8f(0x130)]||'':'';
 
 //************************[FAKE REPLY]************************\\
-//FAKEREPLY PRODUCT
-            const ftoko = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./stik/thumb.jpeg`)},"title": `DyyChan:v`,"description": "Adii", "currencyCode": "IDR","priceAmount1000": "9999999999","retailerId": "Botz","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
-            //FAKE STIKER
-            const fsticker = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},"message": {"stickerMessage": { "url": "https://mmg.whatsapp.net/d/f/Am6FBfNf-E2f1VoGBXkPaNAy7L6Tw_HMavKrHEt48QM4.enc","fileSha256": "Yfj8SW7liSEnDakvyVlXVZQ1LJBC9idn09X7KHe8HTc=","fileEncSha256": "F854aUrzgAkBTOVULpne4oSIi6S04Jo56pjZEo+p+9U=","mediaKey": "Z3nA2asclAAwWHngNO/vJ81qxOE2/0gkEnXak+NxPV4=","mimetype": "image/webp","height": 64,"width": 64,"directPath": "/v/t62.15575-24/12097272_1193895144391295_8973688483514349023_n.enc?ccb=11-4&oh=5a9d7147627a8355569f1a641b9ebee3&oe=60C65E73","fileLength": "7186","mediaKeyTimestamp": "1622815545","isAnimated": false}}}
-            //FAKE VN
-            const fvn = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "9999999","ptt": "true"}}}
-            //FAKE TEXT
-            const ftext = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `I Am`,"title": `Adii Botz`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
-            //FAKE LIVE ACTION
-            const floc2 = {
-                  key: {"fromMe": false,"participant": `0@s.whatsapp.net`, "remoteJid": "6285878313791-60139571124@g.us" },message: { "liveLocationMessage": { "title":`I am Adii Bot`,}}}
-            //FAKEREPLY TROLI
-            const ftroli = {
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: {orderMessage: {itemCount : 2002,status: 1,surface : 1,message: `MENDING JUAL SC INI. HMM`,orderTitle: 'Script bot?',thumbnail: fs.readFileSync('./stik/thumb.jpeg'), sellerJid: '0@s.whatsapp.net'}}}
-            //FAKEREPLY VIDEO
-            const fvideo = {
-                  key: {fromMe: false,participant: `60199782326@s.whatsapp.net`, ...(from ? { remoteJid: "6285878313791-60139571124@g.us" } : {}) },message: { "videoMessage": { "title":"hallo bang","h": `Hmm`,'seconds': '-99999', 'caption': `${fake}`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
-            //FAKEREPLY GROUPINVITE
-            const fgc = {
-                  key: {"fromMe": false,"participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6285878313791-60139571124@g.us","inviteCode": "mememteeeekkeke","groupName": "Adii Botz", "caption": `${fake}`, 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
-            //FAKEREPLY GIF
-            const fgif = {
-                  key: {fromMe: false,participant: `6285878313791@s.whatsapp.net`, ...(from ? { remoteJid: "6285878313791-60139571124@g.us" } : {}) },message: { "videoMessage": { "title":"hallo bang","h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${fake}`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}} 
-            
 const fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/thumb.jpeg')}}}
 const freply = { key: { fromMe: false, participant: '0@s.whatsapp.net' ,}, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": fake, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync(`media/fake.jpeg`)} } }
 const fonce = {
