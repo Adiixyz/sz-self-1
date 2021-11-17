@@ -57,7 +57,7 @@ const imagenye = JSON.parse(fs.readFileSync("./storage/image.json"));
  
 //************************************************************\\ 
 //FUNCTION!
-selfnya = false
+selfnya = true
 multi = true
 nopref = false
 prefa = '-'
@@ -499,7 +499,7 @@ break
 
 case 'jadibot':
     if(mek.key.fromMe) return reply('Tidak bisa jadibot di dalam bot')
-    jadibot(reply,hexa,from)
+    jadibot(reply,conn,from)
     break
 
     case 'stopjadibot':
