@@ -56,14 +56,15 @@ const imagenye = JSON.parse(fs.readFileSync("./storage/image.json"));
  
 //************************************************************\\ 
 //FUNCTION!
-selfnya = true
+selfnya = false
 multi = true
 nopref = false
 prefa = '-'
-bacaanmenu ='©Seazyc' //BUAT FOOTER MENU, GANTI KALO MAU
+fake = 'Dyy'
+bacaanmenu ='@Adyy' //BUAT FOOTER MENU, GANTI KALO MAU
 imgmenu = fs.readFileSync(`./media/fake.jpeg`)
 linkmenu = '-'
-ownerNumber = ["5216145568333:5216145568333@s.whatsapp.net","0@s.whatsapp.net"]
+ownerNumber = ["60199782326:60199782326@s.whatsapp.net","0@s.whatsapp.net"]
 
 //************************************************************\\  
 // STICKER CMD!
@@ -298,6 +299,10 @@ const isUrl = (url) => {
 const reply = (teks) => {
         conn.sendMessage(from, teks, text, {quoted:mek})
 }
+const katalog = (teks) => {
+             res = conn.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Adyy_*", "thumbnail": imgmenu, "surface": 'CATALOG' }}, {quoted:ftroli})
+            conn.relayWAMessage(res)
+        }
 const sendMess = (hehe, teks) => {
         conn.sendMessage(hehe, teks, text)
 }
@@ -363,6 +368,34 @@ return prepare
 const _0x27ad8f=_0x4e80;(function(_0x3f6508,_0x3ee177){const _0x51757f=_0x4e80,_0x205b3b=_0x3f6508();while(!![]){try{const _0x43a49c=-parseInt(_0x51757f(0x139))/0x1*(parseInt(_0x51757f(0x137))/0x2)+-parseInt(_0x51757f(0x132))/0x3+-parseInt(_0x51757f(0x12e))/0x4*(parseInt(_0x51757f(0x136))/0x5)+-parseInt(_0x51757f(0x138))/0x6+parseInt(_0x51757f(0x12c))/0x7+-parseInt(_0x51757f(0x134))/0x8+-parseInt(_0x51757f(0x131))/0x9*(-parseInt(_0x51757f(0x13a))/0xa);if(_0x43a49c===_0x3ee177)break;else _0x205b3b['push'](_0x205b3b['shift']());}catch(_0xd8d90b){_0x205b3b['push'](_0x205b3b['shift']());}}}(_0x3b52,0x35c64));if(mek[_0x27ad8f(0x135)][_0x27ad8f(0x12d)](_0x27ad8f(0x13b))&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x12d)](_0x27ad8f(0x13d))===!![]&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x12d)](_0x27ad8f(0x133))===!![]&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x133)]['hasOwnProperty']('buttonsMessage')===!![]&&mek['message']['buttonsResponseMessage'][_0x27ad8f(0x13d)][_0x27ad8f(0x133)][_0x27ad8f(0x140)][_0x27ad8f(0x12d)](_0x27ad8f(0x12f)))var capbtn=mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)][_0x27ad8f(0x133)][_0x27ad8f(0x140)][_0x27ad8f(0x12f)];else capbtn=_0x27ad8f(0x13e);function _0x4e80(_0x4195c1,_0x4a8b4e){const _0x3b5223=_0x3b52();return _0x4e80=function(_0x4e80bc,_0x479332){_0x4e80bc=_0x4e80bc-0x12c;let _0x34c387=_0x3b5223[_0x4e80bc];return _0x34c387;},_0x4e80(_0x4195c1,_0x4a8b4e);}function _0x3b52(){const _0x13a27e=['Gada','startsWith','buttonsMessage','293671ymoxlW','hasOwnProperty','170360fmFHVM','contentText','participant','121347YBMhzS','1181025dJyKcd','quotedMessage','2043496HgDaJr','message','5VjceRP','82EKmHAh','1884858UugjKC','7621ERmxpQ','1110GFoSTW','buttonsResponseMessage','3EB0','contextInfo'];_0x3b52=function(){return _0x13a27e;};return _0x3b52();}const frombtn=REPLYbtn?REPLYbtn[_0x27ad8f(0x13f)](_0x27ad8f(0x13c))&&REPLYbtn['length']===0xc:![],Pngirimbtn=type==_0x27ad8f(0x13b)&&mek[_0x27ad8f(0x135)][_0x27ad8f(0x13b)][_0x27ad8f(0x13d)]!=null?mek[_0x27ad8f(0x135)]['buttonsResponseMessage'][_0x27ad8f(0x13d)][_0x27ad8f(0x130)]||'':'';
 
 //************************[FAKE REPLY]************************\\
+//FAKEREPLY PRODUCT
+            const ftoko = {
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./stik/thumb.jpeg`)},"title": `DyyChan:v`,"description": "Adii", "currencyCode": "IDR","priceAmount1000": "9999999999","retailerId": "Botz","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+            //FAKE STIKER
+            const fsticker = {
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},"message": {"stickerMessage": { "url": "https://mmg.whatsapp.net/d/f/Am6FBfNf-E2f1VoGBXkPaNAy7L6Tw_HMavKrHEt48QM4.enc","fileSha256": "Yfj8SW7liSEnDakvyVlXVZQ1LJBC9idn09X7KHe8HTc=","fileEncSha256": "F854aUrzgAkBTOVULpne4oSIi6S04Jo56pjZEo+p+9U=","mediaKey": "Z3nA2asclAAwWHngNO/vJ81qxOE2/0gkEnXak+NxPV4=","mimetype": "image/webp","height": 64,"width": 64,"directPath": "/v/t62.15575-24/12097272_1193895144391295_8973688483514349023_n.enc?ccb=11-4&oh=5a9d7147627a8355569f1a641b9ebee3&oe=60C65E73","fileLength": "7186","mediaKeyTimestamp": "1622815545","isAnimated": false}}}
+            //FAKE VN
+            const fvn = {
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds": "9999999","ptt": "true"}}}
+            //FAKE TEXT
+            const ftext = {
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `I Am`,"title": `Adii Botz`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
+            //FAKE LIVE ACTION
+            const floc2 = {
+                  key: {"fromMe": false,"participant": `0@s.whatsapp.net`, "remoteJid": "6285878313791-60139571124@g.us" },message: { "liveLocationMessage": { "title":`I am Adii Bot`,}}}
+            //FAKEREPLY TROLI
+            const ftroli = {
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "60199782326@s.whatsapp.net" } : {})},message: {orderMessage: {itemCount : 2002,status: 1,surface : 1,message: `MENDING JUAL SC INI. HMM`,orderTitle: 'Script bot?',thumbnail: fs.readFileSync('./stik/thumb.jpeg'), sellerJid: '0@s.whatsapp.net'}}}
+            //FAKEREPLY VIDEO
+            const fvideo = {
+                  key: {fromMe: false,participant: `60199782326@s.whatsapp.net`, ...(from ? { remoteJid: "6285878313791-60139571124@g.us" } : {}) },message: { "videoMessage": { "title":"hallo bang","h": `Hmm`,'seconds': '-99999', 'caption': `${fake}`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
+            //FAKEREPLY GROUPINVITE
+            const fgc = {
+                  key: {"fromMe": false,"participant": "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6285878313791-60139571124@g.us","inviteCode": "mememteeeekkeke","groupName": "Adii Botz", "caption": `${fake}`, 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}
+            //FAKEREPLY GIF
+            const fgif = {
+                  key: {fromMe: false,participant: `6285878313791@s.whatsapp.net`, ...(from ? { remoteJid: "6285878313791-60139571124@g.us" } : {}) },message: { "videoMessage": { "title":"hallo bang","h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `${fake}`,'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}} 
+            
 const fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/thumb.jpeg')}}}
 const freply = { key: { fromMe: false, participant: '0@s.whatsapp.net' ,}, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": fake, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync(`media/fake.jpeg`)} } }
 const fonce = {
@@ -425,7 +458,7 @@ case'$':
 if (!mek.key.fromMe) return 
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`SZ-SELF:~ ${err}`)
+if (err) return reply(`Adyy:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
@@ -491,10 +524,31 @@ type: 1,
 );
 break
 
+case 'jadibot':
+    if(mek.key.fromMe) return reply('Tidak bisa jadibot di dalam bot')
+    jadibot(reply,hexa,from)
+    break
+
+    case 'stopjadibot':
+    if(mek.key.fromMe)return reply('tidak bisa stopjadibot kecuali owner')
+    stopjadibot(reply)
+    break
+
+    case 'listbot':
+    let tekss = '「 *LIST JADIBOT* 」\n'
+    for(let i of listjadibot) {
+    tekss += `*Nomor* : ${i.jid.split('@')[0]}
+*Nama* : ${i.name}
+*Device* : ${i.phone.device_manufacturer}
+*Model* : ${i.phone.device_model}\n\n`
+    }
+    reply(tekss)
+    break
+
 case'menu':
 var _0x306ee1=_0xaf25;(function(_0x5ac6cb,_0x2d884f){var _0x4a3280=_0xaf25,_0x1fd9ce=_0x5ac6cb();while(!![]){try{var _0x9c8708=parseInt(_0x4a3280(0x1cc))/0x1+parseInt(_0x4a3280(0x1d0))/0x2*(parseInt(_0x4a3280(0x1bd))/0x3)+parseInt(_0x4a3280(0x1c4))/0x4+-parseInt(_0x4a3280(0x1d2))/0x5+-parseInt(_0x4a3280(0x1cd))/0x6*(-parseInt(_0x4a3280(0x1c7))/0x7)+-parseInt(_0x4a3280(0x1d1))/0x8+parseInt(_0x4a3280(0x1cf))/0x9*(parseInt(_0x4a3280(0x1c0))/0xa);if(_0x9c8708===_0x2d884f)break;else _0x1fd9ce['push'](_0x1fd9ce['shift']());}catch(_0x33c55e){_0x1fd9ce['push'](_0x1fd9ce['shift']());}}}(_0x5283,0x666f8));function _0xaf25(_0x28a77b,_0x4e91bd){var _0x528389=_0x5283();return _0xaf25=function(_0x191ea3,_0x6631d4){_0x191ea3=_0x191ea3-0x1bd;var _0x3d86bc=_0x528389[_0x191ea3];return _0x3d86bc;},_0xaf25(_0x28a77b,_0x4e91bd);}var grooups=conn[_0x306ee1(0x1d8)][_0x306ee1(0x1c2)][_0x306ee1(0x1c5)](_0x3531f5=>_0x3531f5[_0x306ee1(0x1d5)][_0x306ee1(0x1be)](_0x306ee1(0x1bf))),priivat=conn[_0x306ee1(0x1d8)][_0x306ee1(0x1c2)][_0x306ee1(0x1c5)](_0x5e3450=>_0x5e3450[_0x306ee1(0x1d5)][_0x306ee1(0x1be)](_0x306ee1(0x1cb)));const totaltChat=await conn['chats']['all'](),ruuun=process[_0x306ee1(0x1ca)]();function _0x5283(){var _0x440221=['\x1a\x0a\x0a','3897297kbZvzP','758764msTcsN','6438552jcWBBq','2377585KIwhBa','Hai\x20','\x20Tanggal\x20:\x20','jid','\x0a\x0a✇\x20Script\x0ahttp://github.com/Seazyc/sz-self\x0a\x0a✆\x20Group\x0a','\x20Jam\x20:\x20','chats','3KgHYfp','endsWith','g.us','10biwsPH','\x20Prefix\x20:\x20Multi-Prefix\x0a','array','\x20Chat\x20:\x20','1408888NCtFKj','filter','self','646436ThQfwQ','\x20Runtime\x20:\x20','length','uptime','s.whatsapp.net','73535NKvhmF','30EhUYUj'];_0x5283=function(){return _0x440221;};return _0x5283();}var total=grooups[_0x306ee1(0x1c9)]+'\x20'+priivat['length'];const gf=_0x306ee1(0x1d3)+pushname+_0x306ee1(0x1ce)+x+'\x20Mode\x20:\x20'+(selfnya?_0x306ee1(0x1c6):'public')+'\x0a'+x+_0x306ee1(0x1d7)+time+'\x0a'+x+_0x306ee1(0x1d4)+tampilTanggal+'\x0a'+x+_0x306ee1(0x1c1)+x+_0x306ee1(0x1c3)+priivat[_0x306ee1(0x1c9)]+'\x0a'+x+'\x20Group\x20\x20:\x20'+grooups[_0x306ee1(0x1c9)]+'\x0a'+x+_0x306ee1(0x1c8)+waktu(ruuun)+_0x306ee1(0x1d6)+linkmenu+'\x0a‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎';
 const ButMessage = [
-{buttonId: `owner`, buttonText: {displayText: `✇ Owner`}, type: 1}
+{buttonId: `owner`, buttonText: {displayText: `Owner`}, type: 1}
 ]
 const _0x3da4b5=_0x2b1d;function _0x27ea(){const _0x3625b0=['/v/t62.7118-24/32437725_1505331983179378_5778564196924091839_n.enc?ccb=11-4&oh=1c6e2dff8930f19af355107196bc9bcd&oe=61710BB8','n98Tv2UQOxs8N515cvW/eoYiQC8qHXpGiNREkU5CEvA=','1892IdWvcv','PhGDVybtUtv2REHpvZLlOOS+I4t79+BmwjhSoXhx+sQ=','8037PKodFY','sendMessage','KFdRr7O/o0+IuxyuyUOdmCynEIY4SBzUe+vCWvZhERM=','IMAGE','https://mmg.whatsapp.net/d/f/Amr4-OQ-7yH4CraWi8LExMtxE0KmotlR_DnrmCXf5rg9.enc','595074kmuQnI','24TiTBTH','1632381045','18553awOBLr','6071436OSkoNU','2879226NwOuLi','4643240DDoAxy','816140btMdZy'];_0x27ea=function(){return _0x3625b0;};return _0x27ea();}function _0x2b1d(_0x1a3434,_0x1b70e7){const _0x27eaba=_0x27ea();return _0x2b1d=function(_0x2b1dc2,_0x264a15){_0x2b1dc2=_0x2b1dc2-0x1e8;let _0x380c86=_0x27eaba[_0x2b1dc2];return _0x380c86;},_0x2b1d(_0x1a3434,_0x1b70e7);}(function(_0x527810,_0x15c410){const _0x5cdaf9=_0x2b1d,_0x4cde8b=_0x527810();while(!![]){try{const _0x5af755=parseInt(_0x5cdaf9(0x1ef))/0x1+parseInt(_0x5cdaf9(0x1ec))/0x2+parseInt(_0x5cdaf9(0x1f8))/0x3*(parseInt(_0x5cdaf9(0x1f6))/0x4)+-parseInt(_0x5cdaf9(0x1f3))/0x5+-parseInt(_0x5cdaf9(0x1f0))/0x6+-parseInt(_0x5cdaf9(0x1f2))/0x7+-parseInt(_0x5cdaf9(0x1ed))/0x8*(-parseInt(_0x5cdaf9(0x1f1))/0x9);if(_0x5af755===_0x15c410)break;else _0x4cde8b['push'](_0x4cde8b['shift']());}catch(_0x2dbee2){_0x4cde8b['push'](_0x4cde8b['shift']());}}}(_0x27ea,0xac021));const buttonMessage={'imageMessage':{'url':_0x3da4b5(0x1eb),'mimetype':'image/jpeg','fileSha256':_0x3da4b5(0x1f7),'fileLength':'76891','height':0x3e8,'width':0x336,'mediaKey':_0x3da4b5(0x1f5),'fileEncSha256':_0x3da4b5(0x1e9),'directPath':_0x3da4b5(0x1f4),'mediaKeyTimestamp':_0x3da4b5(0x1ee),'jpegThumbnail':imgreply},'contentText':gf+'\x0a'+help(x),'footerText':''+bacaanmenu,'buttons':ButMessage,'headerType':_0x3da4b5(0x1ea)};conn[_0x3da4b5(0x1e8)](from,buttonMessage,MessageType['buttonsMessage'],{'quoted':mek});
 break
