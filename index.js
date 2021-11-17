@@ -61,7 +61,6 @@ selfnya = true
 multi = true
 nopref = false
 prefa = '-'
-fake = 'Dyy'
 bacaanmenu ='@Adyy' //BUAT FOOTER MENU, GANTI KALO MAU
 imgmenu = fs.readFileSync(`./media/fake.jpeg`)
 linkmenu = '-'
