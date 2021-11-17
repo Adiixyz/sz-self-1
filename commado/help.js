@@ -1,5 +1,7 @@
 const help = (x) => {
-	return `𝙊𝙒𝙉𝙀𝙍
+	return `Hello there!
+
+Owner
 > [eval]
 => [eval async]
 $ [code]
@@ -22,7 +24,12 @@ ${x} #setnama
 ${x} #join
 ${x} #status
 
-𝙂𝙍𝙊𝙐𝙋
+Jadibot
+${x} #jadibot
+${x} #stopjadibot
+${x} #listbot
+
+Group
 ${x} #kick
 ${x} #add
 ${x} #group [button]
@@ -30,7 +37,7 @@ ${x} #listadmin
 ${x} #tagall
 ${x} #hidetag
 ${x} #totag
-${x} #antiviewonce[button]
+${x} #antiviewonce [button]
 ${x} #sider
 ${x} #rulesgroup
 ${x} #promote
@@ -40,13 +47,13 @@ ${x} #getname
 ${x} #groupinfo
 ${x} #linkgc
 
-𝙒𝙄𝘽𝙐
+Anime
 ${x} #waifu
 ${x} #loli
 ${x} #husbu
 ${x} #anime
 
-𝙊𝙏𝙃𝙀𝙍
+Other
 ${x} #sherelock
 ${x} #listgroup
 ${x} #google
@@ -63,7 +70,7 @@ ${x} #cogan
 ${x} #darkjokes
 ${x} #kontak
 
-𝘾𝙊𝙉𝙑𝙀𝙍𝙏
+Sticker
 ${x} #take
 ${x} #stiker
 ${x} #toimg
@@ -73,7 +80,7 @@ ${x} #tomp4
 ${x} #attp
 ${x} #emoji
 
-𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿
+Downloader
 ${x} #playstore
 ${x} #play
 ${x} #ytdl
@@ -86,12 +93,12 @@ ${x} #ytmp3
 ${x} #ytmp4
 ${x} #ytsearch
 
-𝙎𝙏𝘾 𝘾𝙈𝘿
+Set Cmd
 ${x} #addcmd
 ${x} #delcmd
 ${x} #listcmd
 
-𝙁𝙐𝙉
+Fun
 ${x} #readmore
 ${x} #jadian
 ${x} #ganteng
@@ -108,7 +115,7 @@ ${x} #nolep
 ${x} #jahat
 ${x} #baik
 
-𝙎𝙏𝙊𝙍𝘼𝙂𝙀
+Storage
 ${x} #addimg
 ${x} #getimg
 ${x} #listimg
