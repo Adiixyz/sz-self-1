@@ -1,10 +1,8 @@
 const help = (x) => {
-	return `Hello there!
-
-Owner
-> [eval]
-=> [eval async]
-$ [code]
+	return `Owner
+${x} > [eval]
+${x} => [eval async]
+${x} $ [code]
 ${x} #q
 ${x} #view [read once]
 ${x} #term [code]
