@@ -411,7 +411,7 @@ footerText: desc1,
 buttons: but,
 headerType: 1
 }
-conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
+conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage, {quoted:fkontak})
 }
 const sendButImage = async(id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
@@ -773,7 +773,10 @@ fs.unlinkSync(ran)
 break
 
 case 'play':
-if(!q) return reply('contoh .play dj ayam')
+if (args.length === 0) {
+txtna = `*「 YTMP3 DOWNLOADER 」*\nSilahkan Balas pesan ini lalu ketik query atau link`
+conn.sendMessage(from, txtna, text, { quoted: mek, messageId: command+'GRUP '+randomSZ() })
+} else {
 var srch = args.join('')
  aramas = await yts(srch);
 aramat = aramas.all 
