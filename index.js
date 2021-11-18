@@ -423,7 +423,7 @@ footerText: desc1,
 buttons: but,
 headerType: 'IMAGE'
 }
-conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted : mek}, options)
+conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted : fkontak}, options)
 }
 switch( evalnya) {
 case'$':
@@ -523,6 +523,24 @@ const ButMessage = [
 {buttonId: `owner`, buttonText: {displayText: `Owner`}, type: 1}
 ]
 const _0x3da4b5=_0x2b1d;function _0x27ea(){const _0x3625b0=['/v/t62.7118-24/32437725_1505331983179378_5778564196924091839_n.enc?ccb=11-4&oh=1c6e2dff8930f19af355107196bc9bcd&oe=61710BB8','n98Tv2UQOxs8N515cvW/eoYiQC8qHXpGiNREkU5CEvA=','1892IdWvcv','PhGDVybtUtv2REHpvZLlOOS+I4t79+BmwjhSoXhx+sQ=','8037PKodFY','sendMessage','KFdRr7O/o0+IuxyuyUOdmCynEIY4SBzUe+vCWvZhERM=','IMAGE','https://mmg.whatsapp.net/d/f/Amr4-OQ-7yH4CraWi8LExMtxE0KmotlR_DnrmCXf5rg9.enc','595074kmuQnI','24TiTBTH','1632381045','18553awOBLr','6071436OSkoNU','2879226NwOuLi','4643240DDoAxy','816140btMdZy'];_0x27ea=function(){return _0x3625b0;};return _0x27ea();}function _0x2b1d(_0x1a3434,_0x1b70e7){const _0x27eaba=_0x27ea();return _0x2b1d=function(_0x2b1dc2,_0x264a15){_0x2b1dc2=_0x2b1dc2-0x1e8;let _0x380c86=_0x27eaba[_0x2b1dc2];return _0x380c86;},_0x2b1d(_0x1a3434,_0x1b70e7);}(function(_0x527810,_0x15c410){const _0x5cdaf9=_0x2b1d,_0x4cde8b=_0x527810();while(!![]){try{const _0x5af755=parseInt(_0x5cdaf9(0x1ef))/0x1+parseInt(_0x5cdaf9(0x1ec))/0x2+parseInt(_0x5cdaf9(0x1f8))/0x3*(parseInt(_0x5cdaf9(0x1f6))/0x4)+-parseInt(_0x5cdaf9(0x1f3))/0x5+-parseInt(_0x5cdaf9(0x1f0))/0x6+-parseInt(_0x5cdaf9(0x1f2))/0x7+-parseInt(_0x5cdaf9(0x1ed))/0x8*(-parseInt(_0x5cdaf9(0x1f1))/0x9);if(_0x5af755===_0x15c410)break;else _0x4cde8b['push'](_0x4cde8b['shift']());}catch(_0x2dbee2){_0x4cde8b['push'](_0x4cde8b['shift']());}}}(_0x27ea,0xac021));const buttonMessage={'imageMessage':{'url':_0x3da4b5(0x1eb),'mimetype':'image/jpeg','fileSha256':_0x3da4b5(0x1f7),'fileLength':'76891','height':0x3e8,'width':0x336,'mediaKey':_0x3da4b5(0x1f5),'fileEncSha256':_0x3da4b5(0x1e9),'directPath':_0x3da4b5(0x1f4),'mediaKeyTimestamp':_0x3da4b5(0x1ee),'jpegThumbnail':imgreply},'contentText':gf+'\x0a'+help(x),'footerText':''+bacaanmenu,'buttons':ButMessage,'headerType':_0x3da4b5(0x1ea)};conn[_0x3da4b5(0x1e8)](from,buttonMessage,MessageType['buttonsMessage'],{'quoted':fkontak});
+break
+
+case 'menu2':
+const buttonwws = [
+  {buttonId: `owner`, buttonText: {displayText: `Owner`}, type: 1}
+]
+    const buttonMessagwwe = {
+    	"locationMessage": {
+            "name": "AdyyBot",
+            "url": "https://telegra.ph/file/d4c4fcaa8416501870ca7.jpg",
+            "jpegThumbnail": null
+ },
+    contentText: `Hai kak ${pushname}\nAda Yang Bisa Dibantu?`,
+    footerText: '© Adyy',
+    buttons: buttonwws,
+    headerType: 6
+}
+conn.sendMessage(from, buttonMessagwwe, MessageType.buttonsMessage,{quoted: fkontak})
 break
 
 case'menu':
