@@ -527,7 +527,7 @@ break
 
 case 'menu2':
 const buttonwws = [
-  {buttonId: `owner`, buttonText: {displayText: `Owner`}, type: 1}
+  {buttonId: `menu`, buttonText: {displayText: `Menu`}, type: 1}
 ]
     const buttonMessagwwe = {
     	"locationMessage": {
@@ -549,11 +549,11 @@ let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
 
 anu =`*AdyyBot*
 
-• *Mode* : ${selfnya ? 'self' : 'public'}
-• *Jam* : ${time}
-• *Tanggal* : ${tampilTanggal}
-• *Prefix* : Multi-Prefix
-• *Chat* : ${priivat.length}`
+• Mode : ${selfnya ? 'self' : 'public'}
+• Jam : ${time}
+• Tanggal : ${tampilTanggal}
+• Prefix : Multi-Prefix
+• Chats : ${priivat.length}`
 
 sendButImage(
           from,
@@ -577,7 +577,7 @@ ccc = args.join(' ')
 oi1 = ccc.split('*')[0]
 oi2 = ccc.split('*')[1]
 inidia = `${oi1} \n`
-katalog(inidia.repeat(oi2))
+imgreply(inidia.repeat(oi2))
 break
 
 
