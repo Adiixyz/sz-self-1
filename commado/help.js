@@ -1,5 +1,17 @@
 const help = (x) => {
-	return `Owner
+	return `Simple Menu
+${x} #ownermenu
+${x} #jadibotmenu
+${x} #groupmenu
+${x} #animemenu
+${x} #othermenu
+${x} #stickermenu
+${x} #downloadermenu
+${x} #setcmdmenu
+${x} #funmenu
+${x} #storagemenu
+
+Owner
 ${x} > [eval]
 ${x} => [eval async]
 ${x} $ [code]
