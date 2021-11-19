@@ -543,12 +543,209 @@ const buttonwws = [
 conn.sendMessage(from, buttonMessagwwe, MessageType.buttonsMessage,{quoted: fkontak})
 break
 
+case 'betamenu':
+ let stod = `${sender}`
+ listMsg = {
+ buttonText: 'pilih',
+ footerText: '*_© By Adii_*',
+ description: `Hai @${stod.split('@')[0]}, Silahkan pilih menu disini`,
+ sections: [
+                     {
+                      "title": `${time}`,
+ rows: [
+                          {
+                              "title": "Ping",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Creator",
+                              "rowId": ".ping"
+                           },
+                           {
+                              "title": "Jadibot",
+                              "rowId": ".owner"
+                           },
+                           {
+                              "title": "Owner Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Jadibot Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Group Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Anime Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Other Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Sticker Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Downloader Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Set Cmd Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Fun Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Storage Menu",
+                              "rowId": ""
+                           }
+                        ]
+                     }],
+ listType: 1
+}
+conn.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:fkontak})
+break
+
+case'ownermenu':
+menu =`Owner Menu:
+_Untuk Creator AdyyBot_
+
+${x} > [eval]
+${x} => [eval async]
+${x} $ [code]
+${x} #q
+${x} #view [read once]
+${x} #term [code]
+${x} #upswteks
+${x} #upswvideo
+${x} #upswimage
+${x} #mode [button]
+${x} #setprefix [buttton]
+${x} #setfakeimg [reply]
+${x} #setthumb [reply]
+${x} #bc
+${x} #clearall
+${x} $setpp
+${x} #leave
+${x} #get
+${x} #setnama
+${x} #join
+${x} #status`
+katalog(menu)
+break
+
+case'jadibotmenu':
+menu =`Jadibot Menu:
+_Tempat untuk kalian mau jadibot sementara_
+
+${x} #jadibot
+${x} #stopjadibot
+${x} #listbot`
+katalog(menu)
+break
+
+case'groupmenu':
+menu =`Group Menu:
+_Command untuk group_
+
+${x} #kick
+${x} #add
+${x} #group [button]
+${x} #listadmin
+${x} #tagall
+${x} #hidetag
+${x} #totag
+${x} #antiviewonce [button]
+${x} #sider
+${x} #rulesgroup
+${x} #promote
+${x} #demote
+${x} #revoke
+${x} #getname
+${x} #groupinfo
+${x} #linkgc`
+katalog(menu)
+break
+
+case'animemenu':
+menu =`Anime Menu:
+_Tempat untuk anime lovers:)_
+
+${x} #waifu
+${x} #loli
+${x} #husbu
+${x} #anime`
+katalog(menu)
+break
+
+case'othermenu':
+menu =`Other Menu:
+_Yo ndak tau kok tanya saia?_
+
+${x} #sherelock
+${x} #listgroup
+${x} #google
+${x} #runtime
+${x} #ping
+${x} #inspect
+${x} #pinterest
+${x} #getpic
+${x} #linkwa
+${x} #translate
+${x} #repeat [teks*4]
+${x} #cecan
+${x} #cogan
+${x} #darkjokes
+${x} #kontak`
+katalog(menu)
+break
+
+case'stickermenu':
+menu =`Sticker Menu:
+_Tempat bot buat stiker_
+
+${x} #take
+${x} #stiker
+${x} #toimg
+${x} #detikvideo
+${x} #detikvn
+${x} #tomp4
+${x} #attp
+${x} #emoji`
+katalog(menu)
+break
+
+case'downloadermenu':
+menu =`Downloader Menu:
+_Download lah apa kalian mau_
+
+${x} #playstore
+${x} #play
+${x} #ytdl
+${x} #tiktok
+${x} #ig [link]
+${x} #video
+${x} #igstory
+${x} #lirik
+${x} #ytmp3
+${x} #ytmp4
+${x} #ytsearch`
+katalog(menu)
+break
+
+case'
 case'menu':
 var priivat = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
 ruan = process.uptime()
 
-anu =`*AdyyBot*
+anu =`**AdyyBot**
 
 • Mode : ${selfnya ? 'Self' : 'Public'}
 • Jam : ${time}
