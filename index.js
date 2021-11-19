@@ -555,43 +555,43 @@ case 'betamenu':
  rows: [
                           {
                               "title": "Ping",
-                              "rowId": ""
+                              "rowId": `ping`
                            },
                            {
                               "title": "Creator",
-                              "rowId": ".ping"
+                              "rowId": `owner`
                            },
                            {
-                              "title": "Jadibot",
-                              "rowId": ".owner"
+                              "title": "runtime",
+                              "rowId": `runtime`
                            },
                            {
                               "title": "Owner Menu",
-                              "rowId": ""
+                              "rowId": `ownermenu`
                            },
                            {
                               "title": "Jadibot Menu",
-                              "rowId": ""
+                              "rowId": `jadibotmenu`
                            },
                            {
                               "title": "Group Menu",
-                              "rowId": ""
+                              "rowId": `groupmenu`
                            },
                            {
                               "title": "Anime Menu",
-                              "rowId": ""
+                              "rowId": `animemenu`
                            },
                            {
                               "title": "Other Menu",
-                              "rowId": ""
+                              "rowId": `othermenu`
                            },
                            {
                               "title": "Sticker Menu",
-                              "rowId": ""
+                              "rowId": `stickermenu`
                            },
                            {
                               "title": "Downloader Menu",
-                              "rowId": ""
+                              "rowId": `downloadermenu`
                            },
                            {
                               "title": "Set Cmd Menu",
@@ -599,11 +599,11 @@ case 'betamenu':
                            },
                            {
                               "title": "Fun Menu",
-                              "rowId": ""
+                              "rowId": `funmenu`
                            },
                            {
                               "title": "Storage Menu",
-                              "rowId": ""
+                              "rowId": `storagemenu`
                            }
                         ]
                      }],
@@ -739,7 +739,47 @@ ${x} #ytsearch`
 katalog(menu)
 break
 
-case'
+case'funmenu':
+menu =`Fun Menu:
+_Sentiasa fun:v_
+
+${x} #readmore
+${x} #jadian
+${x} #ganteng
+${x} #beban
+${x} #cantik
+${x} #jelek
+${x} #nganggur
+${x} #hebat
+${x} #wibu
+${x} #pakboy
+${x} #pakgirl
+${x} #sange
+${x} #nolep
+${x} #jahat
+${x} #baik`
+katalog(menu)
+break
+
+case'storagemenu':
+menu =`Storage Menu:
+_huh?_
+
+${x} #addimg
+${x} #getimg
+${x} #listimg
+${x} #liststicker
+${x} #addsticker
+${x} #getsticker
+${x} #addvn
+${x} #getvn
+${x} #listvn
+${x} #getvideo
+${x} #listvideo
+${x} #addvideo`
+katalog(menu)
+break
+
 case'menu':
 var priivat = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
