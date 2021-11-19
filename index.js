@@ -546,18 +546,21 @@ break
 case'menu':
 var priivat = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
+ruan = process.uptime()
 
 anu =`*AdyyBot*
 
-• Mode : ${selfnya ? 'self' : 'public'}
+• Mode : ${selfnya ? 'Self' : 'Public'}
 • Jam : ${time}
 • Tanggal : ${tampilTanggal}
 • Prefix : Multi-Prefix
-• Chats : ${priivat.length}`
+• Chats : ${priivat.length}
+• Uptime : ${waktu(ruan)}
+`
 
 sendButImage(
           from,
-          `${anu}\n\n\n${help(x)}`,
+          `${anu}\n${help(x)}`,
           `© Adyy`,
           thumbnya,
           [
