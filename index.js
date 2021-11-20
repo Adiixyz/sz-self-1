@@ -519,7 +519,7 @@ case 'jadibot':
     break
 
 case'menu':
-sendButMessage(from, `Menu:`, `Silahkan pilih salah satu`, [
+sendButMessage(from, `MENU BOTZ:`, `Silahkan pilih salah satu`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -553,7 +553,7 @@ const buttonwws = [
     	"locationMessage": {
             "name": "AdyyBot",
             "url": "https://telegra.ph/file/d4c4fcaa8416501870ca7.jpg",
-            "jpegThumbnail": null
+            "jpegThumbnail": "https://telegra.ph/file/d4c4fcaa8416501870ca7.jpg"
  },
     contentText: `Hai kak ${pushname}\nAda Yang Bisa Dibantu?`,
     footerText: '© Adyy',
@@ -564,11 +564,6 @@ conn.sendMessage(from, buttonMessagwwe, MessageType.buttonsMessage,{quoted: fkon
 break
 
 case'buttonmenu':
-katalog(`Silahkan tunggu!
-
-AdyyBOTZ Lagi membaca database list command
-
-Jika list tidak muncul silahkan ketik .menu`)
  let stod = `${sender}`
  listMsg = {
  buttonText: 'pilih',
@@ -576,7 +571,7 @@ Jika list tidak muncul silahkan ketik .menu`)
  description: `Hai @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
-                      "title": `${time}`,
+                      "title": `${tampilTanggal} | ${time}`,
  rows: [
                           {
                               "title": "Ping",
