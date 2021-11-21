@@ -60,10 +60,11 @@ const imagenye = JSON.parse(fs.readFileSync("./storage/image.json"));
 selfnya = true
 multi = true
 nopref = false
-prefa = '-'
+prefa = '👎'
 bacaanmenu ='root@AdyyBotz~#' //BUAT FOOTER MENU, GANTI KALO MAU
 imgmenu = fs.readFileSync(`./media/fake.jpeg`)
 linkmenu = '-'
+ownernya = 
 ownerNumber = ["60199782326:60199782326@s.whatsapp.net","0@s.whatsapp.net"]
 
 //************************************************************\\  
@@ -307,6 +308,9 @@ const katalog = (teks) => {
 const sendMess = (hehe, teks) => {
         conn.sendMessage(hehe, teks, text)
 }
+const textImg = (teks) => {
+            conn.sendMessage(from, teks, text, {quoted: mek, thumbnail: fs.readFileSync('./media/thumb.jpeg')})
+        }
 const mentions = (teks, memberr, id) => {
         (id == null || id == undefined || id == false) ? conn.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : conn.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
 }
