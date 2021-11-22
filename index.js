@@ -523,7 +523,7 @@ case 'jadibot':
     break
 
 case'menu':
-let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
+let thubnya = fs.readFileSync(`./media/thumb.jpeg`)
 kntl = process.uptime()
 
 mana =`_Hi ${pushname}!_
@@ -541,7 +541,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thumbnya, [
+sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
