@@ -309,7 +309,7 @@ const sendMess = (hehe, teks) => {
         conn.sendMessage(hehe, teks, text)
 }
 const textImg = (teks) => {
-            conn.sendMessage(from, teks, text, {quoted: mek, thumbnail: fs.readFileSync('./media/thumb.jpeg')})
+         return conn.sendMessage(from, teks, text, {quoted: mek, thumbnail: fs.readFileSync('./media/thumb.jpeg')})
         }
 const mentions = (teks, memberr, id) => {
         (id == null || id == undefined || id == false) ? conn.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : conn.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
@@ -523,7 +523,9 @@ case 'jadibot':
     break
 
 case'menu':
-kntl 
+let thumbnya = fs.readFileSync(`./media/thumb.jpeg`)
+kntl = process.uptime()
+
 mana =`_Hi ${pushname}!_
 
 *Bot Info*
@@ -532,16 +534,14 @@ mana =`_Hi ${pushname}!_
 • Auto recording : true
 • Multi Prefix : true
 • No Prefix : false
-• Uptime : 
+• Uptime : ${waktu(kntl)}
+
 *User Info*
 • User : ${pushname}
 • Premium User : false
 • Registered : ✓
-
-*Date and Time*
-• Time : 
-
-sendButMessage(from, `MENU BOTZ:`, `Silahkan pilih salah satu`, [
+`
+sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thumbnya, [
           {
             buttonId: `command`,
             buttonText: {
@@ -821,8 +821,6 @@ ${x} #listvideo
 ${x} #addvideo`
 katalog(menu)
 break
-
-case'menu':
 
 case'command':
 var priivat = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
