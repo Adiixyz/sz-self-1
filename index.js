@@ -57,7 +57,7 @@ const imagenye = JSON.parse(fs.readFileSync("./storage/image.json"));
  
 //************************************************************\\ 
 //FUNCTION!
-selfnya = true
+selfnya = false
 multi = true
 nopref = false
 prefa = '👎'
@@ -523,6 +523,24 @@ case 'jadibot':
     break
 
 case'menu':
+kntl 
+mana =`_Hi ${pushname}!_
+
+*Bot Info*
+• Script : nanti
+• Prefix : ${prefix}
+• Auto recording : true
+• Multi Prefix : true
+• No Prefix : false
+• Uptime : 
+*User Info*
+• User : ${pushname}
+• Premium User : false
+• Registered : ✓
+
+*Date and Time*
+• Time : 
+
 sendButMessage(from, `MENU BOTZ:`, `Silahkan pilih salah satu`, [
           {
             buttonId: `command`,
