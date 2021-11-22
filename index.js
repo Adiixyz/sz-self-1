@@ -852,7 +852,7 @@ break
 case 'runtime':
 runtime = process.uptime()
 teks = `${waktu(runtime)}`
-textimg(`${teks}`)
+textImg(`${teks}`)
 break
 
 case 'group': 
