@@ -416,7 +416,7 @@ footerText: desc1,
 buttons: but,
 headerType: 1
 }
-conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage, {quoted:fkontak})
+conn.sendMessage(id, buttonMessage, MessageType.buttonsMessage, {quoted:fkontak}, options)
 }
 const sendButImage = async(id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
@@ -429,6 +429,18 @@ buttons: but,
 headerType: 'IMAGE'
 }
 conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted : fkontak}, options)
+}
+const sendButLocation = async (id, text1, desc1, loc1, but = [], options = {}) => {
+kma = loc1
+mhan = await denz.prepareMessage(from, kma, location)
+const buttonMessages = {
+locationMessage: mhan.message.locationMessage,
+contentText: text1,
+footerText: desc1,
+buttons: but,
+headerType: "LOCATION"
+}
+conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted:fkontak}, options)
 }
 switch( evalnya) {
 case'$':
@@ -541,7 +553,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
+sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
@@ -839,7 +851,7 @@ anu =`**AdyyBot*
 • Group Bot : s.id/adyybotzgc
 `
 
-sendButImage(
+sendButLocation(
           from,
           `${anu}\n${help(x)}`,
           `© Adyy`,
