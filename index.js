@@ -432,7 +432,7 @@ conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted : fkont
 }
 const sendButLocation = async (id, text1, desc1, loc1, but = [], options = {}) => {
 kma = loc1
-mhan = await denz.prepareMessage(from, kma, location)
+mhan = await conn.prepareMessage(from, kma, location)
 const buttonMessages = {
 locationMessage: mhan.message.locationMessage,
 contentText: text1,
