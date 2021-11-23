@@ -1,5 +1,5 @@
 {
-  "name": "SZ-SELF",
+  "name": "ADYYBOTZ",
   "version": "0.0.1",
   "description": "jangn lupa bahagia",
   "main": "run.js",
@@ -52,15 +52,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seazyc/sz-self.git"
+    "url": "git+https://github.com/Adiixyz/AdyyBOTZ.git"
   },
   "keywords": [
     "Wasu"
   ],
-  "author": "SEAZYC",
+  "author": "Adyy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/seazyc/sz-self/issues"
+    "url": "https://github.com/Adiixyz/AdyyBOTZ/issues"
   },
   "homepage": "https://github.com/adulalhy"
 }
