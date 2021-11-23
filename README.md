@@ -1,32 +1,39 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+<div align="center">
+<img src="https://github.com/Adiixyz.png" alt="dy" width="300" />
+</div>
 
-## Cara Install Di Termux
+<h1 align="center">ADYYBOTZ</h1>
+
+-------
+# Installation
+
+## Termux
 ```cmd
 > pkg update && pkg upgrade
 > pkg install git -y
 > pkg install nodejs -y
-> git clone https://github.com/Seazyc/sz-self.git
-> cd SZBase
+> pkg install libwebp
+> pkg install ffmpeg
+> git clone https://github.com/Adiixyz/AdyyBOTZ.git
+> cd AdyyBOTZ
 > npm i
 > node run
-> scan QR and Enjoyy
 ```
 
-## Cara Install Di Windows
-* [`Download Node JS`](https://nodejs.org/en/download/)
+## Windows
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
+* [Libwebp](https://developers.google.com/speed/webp/download)
 ```cmd
-> git clone https://github.com/Seazyc/sz-self.git
-> cd sz-self
+> git clone https://github.com/Adiixyz/AdyyBOTZ.git
+> cd AdyyBOTZ
 > npm i
 > node run
-> scan QR and Enjoyy
 ```
-
-## Jalankan Bot
-```cmd
-> npm start
-```
-
+### Scan QR and enjoyyyyyy
+--------
+# Pimtur
 
 ### OWNER
 * `> [eval]`
@@ -69,7 +76,7 @@
 * `groupinfo`
 * `linkgc`
 
-### WIBU
+### Anime
 * `waifu`
 * `loli`
 * `husbu`
@@ -92,7 +99,7 @@
 * `darkjokes`
 * `kontak`
 
-### CONVERT
+### STICKER
 * `take`
 * `stiker`
 * `toimg`
@@ -150,12 +157,3 @@
 * `getvideo`
 * `listvideo`
 * `addvideo`
-
-## Note:
-* Fiturnya Masih Biasa aja:(
-
-
-
-# Special Thanks To :
-* [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`AdulAlhy`](https://github.com/adulahly)
