@@ -575,7 +575,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
+sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
@@ -590,7 +590,7 @@ sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
             },
             type: 1,
           },
-        ], {quoted:fkontak, location: true})
+        ], {quoted:fkontak, thumbnail:thubnya});
         break
 
 case'help':
