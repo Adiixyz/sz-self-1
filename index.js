@@ -590,7 +590,7 @@ sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
             },
             type: 1,
           },
-        ], thumbnail:thubnya);
+        ], thumbnail:thubnya)
         break
 
 case'help':
