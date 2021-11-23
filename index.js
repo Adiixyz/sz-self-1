@@ -553,7 +553,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
+sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, `https://telegra.ph/file/d4c4fcaa8416501870ca7.jpg`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -851,7 +851,7 @@ anu =`**AdyyBot*
 • Group Bot : s.id/adyybotzgc
 `
 
-sendButLocation(
+sendButImage(
           from,
           `${anu}\n${help(x)}`,
           `© Adyy`,
