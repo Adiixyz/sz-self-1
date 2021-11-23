@@ -488,7 +488,15 @@ if (budy.includes("Assalamualaikum")){
 reply("Waalai'kumsalam")
 }
 
+if (budy.includes("assalamualaikum")){
+reply("waalai'kumsalam")
+}
+
 if (budy.includes("Adyy")){
+reply("adyy disini")
+}
+
+if (budy.includes("adyy")){
 reply("adyy disini")
 }
 
@@ -567,7 +575,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
+sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
@@ -582,7 +590,7 @@ sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
             },
             type: 1,
           },
-        ]);
+        ], thumbnail:thubnya);
         break
 
 case'help':
