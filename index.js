@@ -480,7 +480,21 @@ e = String(err)
 reply(e)
 }}
 
+if (budy.includes("kontol")){
+reply("JANGAN TOXIC OYY")
+}
 
+if (budy.includes("Assalamualaikum")){
+reply("Waalai'kumsalam")
+}
+
+if (budy.includes("Adyy")){
+reply("adyy disini")
+}
+
+if (budy.includes("bot")){
+reply("aktif")
+}
 
 //TAMPILAN LOG!
 if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
@@ -553,7 +567,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, `https://telegra.ph/file/d4c4fcaa8416501870ca7.jpg`, [
+sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
