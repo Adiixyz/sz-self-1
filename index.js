@@ -440,7 +440,7 @@ footerText: desc1,
 buttons: but,
 headerType: "LOCATION"
 }
-conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, {quoted:fkontak}, options)
+conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
 switch( evalnya) {
 case'$':
@@ -575,7 +575,7 @@ mana =`_Hi ${pushname}!_
 • Premium User : false
 • Registered : ✓
 `
-sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
+sendButLocation(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
           {
             buttonId: `command`,
             buttonText: {
@@ -590,7 +590,7 @@ sendButImage(from, `${mana}`, `Silahkan pilih salah satu`, thubnya, [
             },
             type: 1,
           },
-        ], thumbnail:thubnya)
+        ], {quoted:fkontak, location: true})
         break
 
 case'help':
